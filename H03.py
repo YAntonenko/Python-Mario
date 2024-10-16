@@ -15,9 +15,11 @@ import turtle
 
 
 #Ülesane 03.4:Lemmikraamat
-raamatu_pealkiri = ("Võitjad")
-raamatu_autor = ("Fredrik Backman")
-print(raamatu_pealkiri," ",raamatu_autor)
+raamatu_pealkiri = ("Sipsik")
+raamatu_autor = ("Eno Raund")
+lehekulgede_arv = 16
+hindamisskoor = 9.7
+print("Minu lemmikraamat on "+raamatu_pealkiri+" "+raamatu_autor+", mis on "+str(lehekulgede_arv)+" lehekülge pikk mille ma hindan "+str(hindamisskoor)+" punktiga.")
 
 
 
@@ -25,7 +27,7 @@ print(raamatu_pealkiri," ",raamatu_autor)
 
 
 
-
+"""
 #Ülesane 03.5: unistuste auto
 mark, mudel = "bmw", "118"
 auto = mark+" "+mudel
@@ -33,9 +35,9 @@ aasta = 1997
 hind = 301.60
 
 print("Minu unistuste auto on",auto,"aastast",aasta,"mille hind on",hind,"eurot.")
+"""
 
-
-
+"""
 #Ülesanded 03.6: Python turtle kolmnurk
 kylje_pikkus = 200
 nurk = 120
@@ -54,3 +56,4 @@ for i in range(3):
 
 
 turtle.done()
+"""
