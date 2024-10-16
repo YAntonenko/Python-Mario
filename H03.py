@@ -15,8 +15,10 @@ import turtle
 
 
 #Ülesane 03.4:Lemmikraamat
-raamatu_pealkiri = ("")
-raamatu_autor = ("")
+raamatu_pealkiri = ("Võitjad")
+raamatu_autor = ("Fredrik Backman")
+print(raamatu_pealkiri," ",raamatu_autor)
+
 
 
 
