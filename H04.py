@@ -1,6 +1,7 @@
 #16.10.2024 Yuna Antonenko
 #Ülesanded 4
 <<<<<<< HEAD
+<<<<<<< HEAD
 import turtle 
 
 #5. Ringi pindala ja Turtle
@@ -42,6 +43,11 @@ except:
 import turtle
 
 
+=======
+import turtle
+
+
+>>>>>>> 431736d48c9bfeeaf17fd0a4e6bfcb6f51bdde28
 #Ringi pindala ja Turtle 
 try:
     r = int(input("Ssseta ringi raadius:"))
@@ -66,12 +72,16 @@ try:
     print(f"Saad teha {komlektid} täis kinkekasti. Üle jääb {yle} kingitust.")
 except:
     print("Lisasid koguse valesti")
+<<<<<<< HEAD
+>>>>>>> 431736d48c9bfeeaf17fd0a4e6bfcb6f51bdde28
+=======
 >>>>>>> 431736d48c9bfeeaf17fd0a4e6bfcb6f51bdde28
 """
 
 
 
 """
+<<<<<<< HEAD
 <<<<<<< HEAD
 #2. Raamatute allahindus
 ale = 0.3
@@ -84,6 +94,8 @@ print(f"{kogus} raamatu hind soodustusega on {summa:0.2}€")
 
 
 =======
+=======
+>>>>>>> 431736d48c9bfeeaf17fd0a4e6bfcb6f51bdde28
 #Faili allalaadimine
 try: 
     failiSuurus = int(input("Sisesta faili suurus: "))
@@ -105,6 +117,9 @@ print(f" {kogus} raamatu hind soodustusega on {summa:0.2f}€.")
 """
 
 
+<<<<<<< HEAD
+>>>>>>> 431736d48c9bfeeaf17fd0a4e6bfcb6f51bdde28
+=======
 >>>>>>> 431736d48c9bfeeaf17fd0a4e6bfcb6f51bdde28
 """
 #1. Aia pikkus
@@ -113,9 +128,13 @@ b = int(input("Sisesta külg 2: "))
 p = 2 * (a + b)
 print(f"Aia kogupikkus om {p} meetrit.")
 <<<<<<< HEAD
+<<<<<<< HEAD
 """
 
 
+=======
+"""
+>>>>>>> 431736d48c9bfeeaf17fd0a4e6bfcb6f51bdde28
 =======
 """
 >>>>>>> 431736d48c9bfeeaf17fd0a4e6bfcb6f51bdde28
