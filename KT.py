@@ -5,38 +5,18 @@ import turtle
 # pildid 10) 9) 1) 
 
 
-# 1. pild
-'''
-turtle.speed(10)
-
-for i in range(1):
+# 1
+turtle.speed(6)
+for i in range(4):
     turtle.forward(50)
     turtle.left(90)
     turtle.forward(50)
     turtle.left(90)
     turtle.forward(50)
     turtle.right(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-'''
 
 
-# 9. pild 
+# 9.
 '''
 turtle.speed(3)
 
@@ -87,7 +67,7 @@ for i in range(3):
     turtle.right(90)
     turtle.forward(50)
 '''
-    
+''' 
 # 10. pildi
 
 for i in range(2):
@@ -115,7 +95,7 @@ for i in range(1):
     turtle.forward(85)
     turtle.right(90)
     turtle.forward(60)
-
+'''
 
 
 
