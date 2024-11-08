@@ -1,4 +1,6 @@
-#06.11.2024 Yuna Antonenko
+#KontrolTöö
+#06.11.2024
+#Yuna Antonenko
 
 import turtle 
 
@@ -6,6 +8,7 @@ import turtle
 
 
 # 1
+
 turtle.speed(6)
 for i in range(4):
     turtle.forward(50)
@@ -18,7 +21,6 @@ for i in range(4):
 
 # 9.
 '''
-turtle.speed(3)
 
 for i in range(4):
     turtle.forward(50)
@@ -96,87 +98,6 @@ for i in range(1):
     turtle.right(90)
     turtle.forward(60)
 '''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-""" 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 turtle.done()
