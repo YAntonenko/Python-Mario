@@ -9,4 +9,7 @@ def pikim_sona(*sonad):
     print(f"Pikkim sõna on {pikim} märki!")
 
 
-pikim_sona("üks","kaks","kolmkümmend", "kaheksa", "vjfgdlfökvlkjnpoegrvlkös")
+pikim_sona("üks", "kaks", "kolmkümmend", "kaheksa", "vjfgdlfökvlkjnpoegrvlkös")
+
+
+
