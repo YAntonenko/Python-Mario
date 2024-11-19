@@ -12,34 +12,33 @@ import turtle
 # 10. pildi
 turtle.speed(30)
 
-for i in range(1):
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(40) 
-    turtle.right(90)
-    turtle.forward(75)
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(85)
-    turtle.left(90)
-    turtle.forward(50) 
+
+turtle.forward(10)
+turtle.left(90)
+turtle.forward(40) 
+turtle.right(90)
+turtle.forward(75)
+turtle.left(90)
+turtle.forward(10)
+turtle.left(90)
+turtle.forward(85)
+turtle.left(90)
+turtle.forward(50) 
 
 
 
 
-for i in range(1):
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(75)
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(85)
-    turtle.left(90)
-    turtle.forward(60)
+
+turtle.forward(10)
+turtle.left(90)
+turtle.forward(50)
+turtle.right(90)
+turtle.forward(75)
+turtle.left(90)
+turtle.forward(10)
+turtle.left(90)
+turtle.forward(85)
+turtle.left(90)
 
 
 for i in range(1):
