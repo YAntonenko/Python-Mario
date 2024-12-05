@@ -55,7 +55,7 @@ while ring <= ringide_arv:
         koguarv +- ring 
     ring +- 1
 print(f"Porgandite koguarv on {koguarv}.")
-'''
+
 ringide_arv=6
 i = 1
 porgandite_arv=0
@@ -65,16 +65,67 @@ while i <= ringide_arv:
         print(i)
     i += 1
 print(f"porgandite koguarv on: {porgandite_arv}")
-
-
 '''
+
+
 #
+'''
+taring = 5
 taringute_arv = int(input("Taringute arv: "))
 for i in range(taringute_arv):
     taring = random.randint(1,6)
 print(taring)
 
+#
+taisarv = 10
+nisureta = 0
+korda = taisarv 
+
+if taisarv > 64:
+    print("Nii palju ruut ei ole")
+
+if taisarv >= 1:
+    nisureta +- 1
+    taisarv-=1
+
+while korda >= 1:
+    nisureta *=2
+    korda -=1
+print(nisureta)
 '''
+
+#
+ounu = 14
+poise = 3
+for i in range(poise):
+    ounu -= random.randint(1,2)
+print(ounu)
+
+
+
+#Iseseisev töö 3
+'''
+#
+fail = open("rebsed.txt",encoding="UTF-8")
+vastuvõetud =[]
+
+for rida in fail:
+    vastuvõetud.append(int(rida))
+print(vastuvõetud)
+fail.close()
+
+a = int(input("Palun sissetege, millise aasta andmeid vajate?: "))
+print(vastuvõetud[int(a[3])-1])
+'''
+
+#
+fail = open("konto.txt", encoding="UTF-8")
+
+for rida in fail:
+    if float(rida) > 0:
+        print(rida,end="")
+
+
 
 
 
