@@ -55,22 +55,26 @@ while ring <= ringide_arv:
         koguarv +- ring 
     ring +- 1
 print(f"Porgandite koguarv on {koguarv}.")
-
+'''
 ringide_arv=6
 i = 1
-while i < ringide_arv:
-    print(i)
+porgandite_arv=0
+while i <= ringide_arv:
+    if i%2==0:
+        porgandite_arv+=1
+        print(i)
     i += 1
+print(f"porgandite koguarv on: {porgandite_arv}")
+
+
 '''
-
-
 #
 taringute_arv = int(input("Taringute arv: "))
 for i in range(taringute_arv):
     taring = random.randint(1,6)
 print(taring)
 
-
+'''
 
 
 
