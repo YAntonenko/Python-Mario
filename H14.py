@@ -1,7 +1,8 @@
 #19.11.2024 Yuna Antonenko
 #Ülesane 14
 import turtle
-import random 
+import random
+
 
 ekraan = turtle.Screen()
  

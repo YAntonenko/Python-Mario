@@ -1,6 +1,6 @@
 #05.12.2024 Yuna Antonenko
 #KT
-
+import random
 
 #Iseseisev töö 1
 '''
@@ -45,7 +45,7 @@ else:
 kordade_arv = int(input("Sisseta mitu korda äratada: "))
 for i in range(kordade_arv):
     print("Tõuse ja säru!")
-'''
+
 #
 ringide_arv = int(input("Sisseta ringide arv: "))
 koguarv = 0
@@ -56,10 +56,19 @@ while ring <= ringide_arv:
     ring +- 1
 print(f"Porgandite koguarv on {koguarv}.")
 
+ringide_arv=6
+i = 1
+while i < ringide_arv:
+    print(i)
+    i += 1
+'''
 
 
-
-
+#
+taringute_arv = int(input("Taringute arv: "))
+for i in range(taringute_arv):
+    taring = random.randint(1,6)
+print(taring)
 
 
 
