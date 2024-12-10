@@ -65,11 +65,11 @@ while i <= ringide_arv:
         print(i)
     i += 1
 print(f"porgandite koguarv on: {porgandite_arv}")
-'''
+
 
 
 #
-'''
+
 taring = 5
 taringute_arv = int(input("Taringute arv: "))
 for i in range(taringute_arv):
@@ -92,7 +92,7 @@ while korda >= 1:
     nisureta *=2
     korda -=1
 print(nisureta)
-'''
+
 
 #
 ounu = 14
@@ -100,7 +100,7 @@ poise = 3
 for i in range(poise):
     ounu -= random.randint(1,2)
 print(ounu)
-
+'''
 
 
 #Iseseisev töö 3
@@ -116,7 +116,7 @@ fail.close()
 
 a = int(input("Palun sissetege, millise aasta andmeid vajate?: "))
 print(vastuvõetud[int(a[3])-1])
-'''
+
 
 #
 fail = open("konto.txt", encoding="UTF-8")
@@ -124,6 +124,46 @@ fail = open("konto.txt", encoding="UTF-8")
 for rida in fail:
     if float(rida) > 0:
         print(rida,end="")
+
+'''
+
+
+#Iseseisev töö 4
+'''
+print("OSTA JA SA EI KAHETSE!")
+name = input("Mitu korda soovitatakse reklaamlauset kuvada?"(3))
+millist = input("Millist  reklaamlauset soovib kasutada?"(5))
+
+#
+sg = int(input("Mitu korda soovitakse lauset kuvada:  "))
+sf = input("Millist  reklaamlauset soovib kasutada:  ")
+def banner(x, y):
+    for i in range(x):
+        print(y.upper())
+banner(sg, sf)
+
+
+#
+def mahlapakkide_arv(kg):
+    arv = round(kg *0.4/3,0)
+    return arv
+
+ounad = int(input("Õunte kogud:  "))
+print(mahlapakkide_arv(ounad))
+'''
+
+#
+failinimi = input("Vali faili nimi:  ") 
+fail = open(failinimi, "r+")
+read = fail.readline()
+print(read)
+
+
+
+
+
+
+
 
 
 
