@@ -150,14 +150,23 @@ def mahlapakkide_arv(kg):
 
 ounad = int(input("Õunte kogud:  "))
 print(mahlapakkide_arv(ounad))
-'''
+
 
 #
 failinimi = input("Vali faili nimi:  ") 
 fail = open(failinimi, "r+")
 read = fail.readline()
 print(read)
+'''
 
+#
+def tervitus(n):
+    for i in range(n):
+        print('Võõrustaja: "Tere!"')
+        print(f"Täna {i+1}. kord tervitada, mõtiskleb võõrustaja.")
+        print(f"Külaline: \"Tere, suur täa kutse eesti!\"")
+s = int(input("Sissetage külaliste arv: "))
+tervitus(s)
 
 
 
