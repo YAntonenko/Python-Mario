@@ -75,7 +75,7 @@ if __name__ == "__main__":
 #   предыдущая проверка, не добавил ли пользователь число или не установил его равным нулю — 2p
 #   код, сообщающий о четном или нечетном числе - 2p
 #   отображается название программы - 1п
-
+'''
 def check_even_odd():
     print("Hey!")
     number = int(input("Please enter a number:  "))
@@ -88,10 +88,74 @@ def check_even_odd():
 
 check_even_odd()
 
+'''
+#14 Palkade võrdlus
 
-#14
+# равнение зарплат. Создайте файл «зарплата.txt» с именем, полом и количеством окладов сотрудников
+#  (10 сотрудников).
+# Создайте программу, которая анализирует, есть ли в компании дискриминация по половому признаку. 
+# Для этого сравните самые высокие зарплаты n(naised) и m(mehed). Программа должна принять решение.
+
+with open('palk.txt', 'w') as file:
+    file.write("Hubert Hunt m 2340\n")
+    file.write("Siim Siil m 2570\n")
+    file.write("Märt Mäger m 1960\n")
+    file.write("Vilma Vihmauss n 2060\n")
+    file.write("Merike Metskits n 2250\n")
+    file.write("Kati Karu n 2370\n")
+    file.write("Elmar Elevant m 2900\n")
+    file.write("Timoteus Tigu m 2850\n")
+    file.write("Reet Rebane n 2340\n")
+    file.write("Kalev Kaamel m 2570\n")
+    file.write("Karmen Kass n 2120\n")
+    file.write("Kornelius Koer m 2250\n")
 
 
+def analyze_discrimination(file_path):
+    m_palk = []
+    n_palk = []
+    
+    with open(file_path, 'r') as file:
+        for line in file:
+            andmed = line.strip()
+    
+            nimi = float(andmed[1])
+            sugu = float(andmed[3])
+            palk = float(andmed[4])
+            
+            if sugu == 'm':
+                m_palk.append(palk)
+            else:
+                n_palk.append(palk)
+        print([nimi], [sugu], [palk])
+
+    avg_m_palk = sum(m_palk) / len(m_palk) if m_palk else 0
+    avg_n_palk = sum(n_palk) / len(n_palk) if n_palk else 0
+
+    if avg_m_palk > avg_n_palk:
+        print("Discrimination detected: Mehed earn more on average.")
+    elif avg_n_palk > avg_m_palk:
+        print("Discrimination detected: Naised earn more on average.")
+    else:
+        print("No discrimination detected: Palkad are equal on average.")
+
+analyze_discrimination('palk.txt')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sugu = m
 
 
 #16
