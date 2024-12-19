@@ -10,38 +10,35 @@ import turtle
 
 
 # 10. pildi
-turtle.speed(30)
+turtle.speed()
+for i in range(2):
+    turtle.forward(10)
+    turtle.left(90)
+    turtle.forward(40) 
+    turtle.right(90)
+    turtle.forward(75)
+    turtle.left(90)
+    turtle.forward(10)
+    turtle.left(90)
+    turtle.forward(85)
+    turtle.left(90)
+    turtle.forward(50) 
 
+'''
+for i in range(2):
+    turtle.forward(10)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.right(90)
+    turtle.forward(75)
+    turtle.left(90)
+    turtle.forward(10)
+    turtle.left(90)
+    turtle.forward(85)
+    turtle.left(90)
+'''
 
-turtle.forward(10)
-turtle.left(90)
-turtle.forward(40) 
-turtle.right(90)
-turtle.forward(75)
-turtle.left(90)
-turtle.forward(10)
-turtle.left(90)
-turtle.forward(85)
-turtle.left(90)
-turtle.forward(50) 
-
-
-
-
-
-turtle.forward(10)
-turtle.left(90)
-turtle.forward(50)
-turtle.right(90)
-turtle.forward(75)
-turtle.left(90)
-turtle.forward(10)
-turtle.left(90)
-turtle.forward(85)
-turtle.left(90)
-
-
-for i in range(1):
+for i in range(2):
     turtle.right(90)
     turtle.forward(40)
     turtle.left(90)
@@ -49,14 +46,14 @@ for i in range(1):
     turtle.right(90)
     turtle.forward(10)
     turtle.right(90)
-    turtle.forward(85)###
+    turtle.forward(85)
     turtle.right(90)
-    turtle.forward(40)
+    turtle.forward(60)
 
 
 
 
-for i in range(1):
+for i in range(2):
     turtle.forward(20)
     turtle.right(90)
     turtle.forward(60)
@@ -70,7 +67,7 @@ for i in range(1):
     turtle.forward(60)
 
 
-    
+'''   
 for i in range(1):
     turtle.forward(10)
     turtle.left(-90)
@@ -121,8 +118,8 @@ for i in range(1):
     turtle.left(90)
     turtle.forward(50)
 
-
-
+'''
+'''
 # 1
 
 turtle.penup()
@@ -194,7 +191,7 @@ for i in range(3):
 turtle.penup()
 turtle.goto(333,-100)
 turtle.pendown()
-
+'''
 
 
 
