@@ -11,28 +11,15 @@
 # Albert Einsteini ja tema kaasautorite järgi tähendab see valem sisuliselt, et mass ja energia on ekvivalentsed.
 
 # Failis nimega einstein.py loo programm Pythonis, mis küsib kasutajalt massi täisarvuna (kilogrammides) ja väljastab ekvivalendi energia džaulides täisarvuna. Eelda, et kasutaja sisestab alati täisarvu.
+
+
+c = 300000000 
+mass = int(input("Sisesta mass kilogrammides: "))
+energy = mass * c**2
+print(f"Massile {mass} kg vastav energia on {energy} džauli.")
+
+
 '''
-def arvutada_energia(mass):
-    c = 300000000  
-    energia = mass * c ** 2
-    return energia
-
-def arv():
-    mass = int(input("Palun sisestage mass kilogrammides: "))
-    energia = arvutada_energia(mass)
-    print(f"Ekvivalentenergia on {energia} joules.")
-arv()
-'''
-
-
-
-
-
-
-
-
-
-
 # ÜLESANNE 8 - NämNaäm
 
 # Oletame, et tavaks on süüa:
@@ -52,27 +39,19 @@ arv()
 #     teisenda aeg (str) 24-tunnises formaadis vastavaks arvuks (float).
 #     Näiteks, kui antakse aeg "7:30", tagastab funktsioon 7.5.
 #     programm kontrollib aja alusel, kas on hommiku-, lõuna- või õhtusöögi aeg, ja väljastab vastava teate.
-'''
-from datetime import datetime
 
-def aeg():
-    now = datetime.now().strftime("%H:%M")
+aeg = input("Sisesta aeg: ")
+tunnid, minutid = map(int, aeg.split(":"))
+t = tunnid + minutid / 60
 
-Hommikusööki_vahemikus_start = "7:00"
-Hommikusööki_vahemikus_end = "8:00"
-Lõunasööki_vahemikus_start = "12:00"
-Lõunasööki_vahemikus_end = "13:00"
-Õhtusööki_vahemikus_start = "18:00"
-Õhtusööki_vahemikus_end = "19:00"
+if 7 <= t <= 8:
+    print("On aeg hommikusöögiks!")
+elif 12 <= t <= 13:
+    print("On aeg lõunasöögiks!")
+elif 18 <= t <= 19:
+    print("On aeg õhtusöögiks!")
 
-if Hommikusööki_vahemikus_start <= aeg < Hommikusööki_vahemikus_end:
-    print("On aeg hommikusöögiks.")
-elif Lõunasööki_vahemikus_start <= aeg < Lõunasööki_vahemikus_end:
-    print("On aeg lõunasöögiks.")
-elif Õhtusööki_vahemikus_start <= aeg < Õhtusööki_vahemikus_end:
-    print("On aeg õhtusöögiks.")
-aeg()
-'''
+
 
 # ÜLESANNE 11 - Kütusenäidik
 
@@ -93,13 +72,10 @@ aeg()
 #         – küsib programm sisestust uuesti.
 # Programmis tuleb kasutada try-except veapüüdmist, et vältida programmi krahhi vigase sisendi korral.
 
-def kontrolli_numbrimarki(numbrimärk):
-    if len(numbrimärk) == 6 and numbrimärk[:3].isupper() and numbrimärk[3:].isdigit():
-        return "SOBIB"
-    else:
-        return "EI SOBI"
-
-kasutaja_numbrimärk = input("Palun sisestage kohandatud autonumber: ")
-tulemus = kontrolli_numbrimarki(kasutaja_numbrimärk)
-print(tulemus)
-
+x, y = map(int, input("Sisesta kütus (X/Y): ").split("/"))
+if y == 0 or x > y:
+    print("Viga.")
+else:
+    p = round((x / y) * 100)
+    print("E" if p <= 1 else "F" if p >= 99 else f"{p}%")
+'''
