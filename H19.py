@@ -9,11 +9,12 @@
 
 import json 
 
-
+kl12 = 0
+kl11 = 0
+kl10 = 0
 
 with open ('haridustulemused.json', 'r', encoding='utf-8') as file:
     haridustulemused = json.load(file)
-
 
 
 for hl in haridustulemused:
@@ -22,12 +23,10 @@ for hl in haridustulemused:
     klass = hl['klass'] 
     hinded = hl['hinded']
     tegevused = hl['tegevused']
-    klasside_arv = []
 
         #1
     if klass == "12":
-        print(f"12 klass: {klass} õpilast")
-        print(nimi)        
+        print(f"12. klass: {nimi}")        
         
         #3
         print(f"Tegevused: {tegevused}")
@@ -35,8 +34,9 @@ for hl in haridustulemused:
         #4
         print(f"Hinded: {hinded}")
 
-        #2
-        klasside_arv = []
+
+
+        print("------------------")
         
 
 
