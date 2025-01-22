@@ -34,8 +34,6 @@ for hl in haridustulemused:
         #4
         print(f"Hinded: {hinded}")
 
-
-
         print("------------------")
         
 
@@ -45,13 +43,6 @@ for hl in haridustulemused:
 
 
 
-
-
-# for hl in haridustulemused:
-#     id = hl['id']
-#     nimi = hl['nimi']
-#     klass = hl['klass'] 
-#     hinded = hl['hinded']
 
 
 
