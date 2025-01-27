@@ -24,6 +24,10 @@ print(f'Keskmine kaugushüppe tulemus: {keskmine_tulemus} m')
 
 #15. Temperatuurid
 with open('temperatuurid.txt', 'r') as fail:
+    kuude_max_temp = []
+
+    for rida in fail:
+        temp = rida.strip().split()
         kuupaev = rida.strip().split()
         kuu = kuupaev[:12]
         temp = float(temp)
